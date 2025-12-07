@@ -1,0 +1,259 @@
+/* -------------------------
+   GLOBAL STYLES
+-------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #F7F7FF;
+    color: #1A1A1A;
+    line-height: 1.6;
+}
+
+/* -------------------------
+   NAVIGATION BAR
+-------------------------- */
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6C63FF;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #6C63FF;
+}
+
+/* -------------------------
+   HERO SECTION
+-------------------------- */
+
+.hero {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.hero-text h1 span {
+    color: #6C63FF;
+}
+
+.hero-text h3 {
+    color: #555;
+    margin: 10px 0 15px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #6C63FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #554bff;
+}
+
+/* HERO IMAGE */
+.hero-img img {
+    width: 330px;
+    border-radius: 50%;
+    border: 5px solid #6C63FF;
+}
+
+/* -------------------------
+   PROJECTS PAGE
+-------------------------- */
+
+.projects-section {
+    padding: 60px 10%;
+}
+
+.projects-section h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* -------------------------
+   RESUME PAGE
+-------------------------- */
+
+.resume-section {
+    padding: 60px 10%;
+}
+
+.resume-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin: 10px 0 30px;
+    padding: 10px 25px;
+    background: #FF6584;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #ff3b67;
+}
+
+.resume-container h2 {
+    margin-top: 25px;
+    color: #6C63FF;
+}
+
+.resume-container ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* -------------------------
+   CONTACT PAGE
+-------------------------- */
+
+.contact-section {
+    padding: 60px 10%;
+}
+
+.contact-section h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    max-width: 500px;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #6C63FF;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #554bff;
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-img img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+
+
+/* Fade-in animation */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
