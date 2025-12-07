@@ -135,6 +135,65 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Project card buttons (live/demo, repo, details) */
+.project-links {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    min-width: 110px;
+
+    /* unified blue background for project buttons */
+    background: #6C63FF;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 8px rgba(108,99,255,0.12);
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+    background: #554bff;
+    box-shadow: 0 6px 16px rgba(108,99,255,0.18);
+}
+
+
+/* make code/details use the same blue background */
+.project-links .btn-code {
+    background: #6C63FF;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.project-links .btn-code:hover {
+    background: #554bff;
+    transform: translateY(-2px);
+}
+
+.project-links .btn-details {
+    background: #6C63FF;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.project-links .btn-details:hover {
+    background: #554bff;
+    transform: translateY(-2px);
+}
+
 /* -------------------------
    RESUME PAGE
 -------------------------- */
@@ -291,5 +350,15 @@ nav {
 
     .contact-form {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-links {
+        gap: 0.5rem;
+    }
+    .project-links a {
+        flex: 1 1 100%;
+        min-width: 0;
     }
 }
