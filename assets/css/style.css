@@ -186,7 +186,8 @@ nav {
     font-size: 32px;
 }
 
-.contact-section .contact-container{
+/* FLEX ROW: form left, quick links right */
+.contact-section .contact-container {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
@@ -194,88 +195,28 @@ nav {
     margin-top: 1.25rem;
 }
 
-/* form grows, sidebar has fixed width */
-.contact-form{
+/* Form takes more space */
+.contact-form {
     flex: 1 1 60%;
-    min-width: 0;
-}
-
-.quick-contact{
-    flex: 0 0 300px;
-    background: #f7f7f7;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.quick-contact h2{
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.05rem;
-}
-
-.quick-contact ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.quick-contact li{
-    margin-bottom: 0.6rem;
-    line-height: 1.4;
-}
-
-/* Responsive: stack on small screens */
-@media (max-width: 768px){
-    .contact-section .contact-container{
-        flex-direction: column;
-    }
-    .quick-contact{
-        order: 2;
-        width: 100%;
-    }
-    .contact-form{
-        order: 1;
-        width: 100%;
-    }
-}
-
-/* Fade-in animation */
-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.8s ease-out;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.project-links a {
-    display: inline-block;
-    margin-right: 15px;
-    padding: 8px 14px;
-    background: #6C63FF;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.project-links a:hover {
-    background: #5548e5;
-}
-
-.quick-contact {
-    margin-bottom: 30px;
+    background: #ffffff;
     padding: 20px;
-    background: #f3f3f3;
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Quick Contact Card */
+.quick-contact {
+    flex: 0 0 300px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .quick-contact h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #6C63FF;
 }
 
 .quick-contact ul {
@@ -283,16 +224,32 @@ section.visible {
     padding: 0;
 }
 
-.quick-contact ul li {
-    margin: 8px 0;
-    font-size: 18px;
+.quick-contact li {
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 .quick-contact a {
-    color: #0077cc;
+    color: #6C63FF;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .quick-contact a:hover {
     text-decoration: underline;
+}
+
+/* Responsive – stack vertically */
+@media (max-width: 768px) {
+    .contact-section .contact-container {
+        flex-direction: column;
+    }
+
+    .quick-contact {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
 }
