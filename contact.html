@@ -26,30 +26,32 @@
     <section class="contact-section">
         <h1>Contact</h1>
 
-        <!-- Quick Contact Links -->
-        <div class="quick-contact">
-            <h2>Reach Me Quickly</h2>
-            <ul>
-                <li><strong>Phone:</strong> <a href="tel:+916360024049">+91 6360024049</a></li>
-                <li><strong>Email:</strong> <a href="mailto:ankithajade47@gmail.com">ankithajade47@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ankitha-jade" target="_blank">linkedin.com/in/ankitha-jade</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/ankithajade" target="_blank">github.com/ankithajade</a></li>
-            </ul>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Your name">
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Your email">
+
+                <label>Message</label>
+                <textarea id="message" placeholder="Your message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Quick Contact Links (sidebar) -->
+            <aside class="quick-contact">
+                <h2>Reach Me Quickly</h2>
+                <ul>
+                    <li><strong>Phone:</strong> <a href="tel:+916360024049">+91 6360024049</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:ankithajade47@gmail.com">ankithajade47@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ankitha-jade" target="_blank">linkedin.com/in/ankitha-jade</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/ankithajade" target="_blank">github.com/ankithajade</a></li>
+                </ul>
+            </aside>
         </div>
-
-        <!-- Contact Form -->
-        <form id="contactForm" class="contact-form">
-            <label>Name</label>
-            <input type="text" id="name" placeholder="Your name">
-
-            <label>Email</label>
-            <input type="email" id="email" placeholder="Your email">
-
-            <label>Message</label>
-            <textarea id="message" placeholder="Your message"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
     <script src="assets/js/script.js"></script>
