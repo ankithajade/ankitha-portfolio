@@ -273,3 +273,33 @@ section.visible {
 .project-links a:hover {
     background: #5548e5;
 }
+
+.quick-contact {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.quick-contact h2 {
+    margin-bottom: 10px;
+}
+
+.quick-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-contact ul li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.quick-contact a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.quick-contact a:hover {
+    text-decoration: underline;
+}
