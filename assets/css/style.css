@@ -108,7 +108,8 @@ nav {
 
 /* HERO IMAGE */
 .hero-img img {
-    width: 330px;
+    width: 380px;
+    height: 520px;
     border-radius: 50%;
     border: 5px solid #6C63FF;
 }
@@ -256,4 +257,19 @@ section {
 section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 14px;
+    background: #6C63FF;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background: #5548e5;
 }
